@@ -1,0 +1,23 @@
+name: Release Pipeline
+
+on:
+  release:
+    types: [published]  # Triggers only when a release is published
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js (or your environment)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Run build
+        run: npm run build
+
+      - name: Deploy or publish
+        run: echo "Deploying version ${{ github.event.release.tag_name }}"
