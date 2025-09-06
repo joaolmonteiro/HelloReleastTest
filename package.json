@@ -1,12 +1,12 @@
 {
-  "name": "hello-release-test",
-  "version": "1.0.0",
-  "description": "A simple Node.js app for testing GitHub releases",
+  "name": "hello-release-testJLM",
+  "version": "1.0.3",
+  "description": "A simple JLM 3 Node.js app for testing GitHub releases",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'Build step placeholder'"
+    "build": "echo 'Build step placeholder 3'"
   },
-  "author": "Your Name",
+  "author": "Joao Monteiro",
   "license": "MIT"
 }
