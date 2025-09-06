@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Run index
+        run: npm start
+
       - name: Run build
         run: npm run build
 
